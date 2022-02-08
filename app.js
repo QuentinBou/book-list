@@ -13,6 +13,18 @@ function reloadTrash() {
       el.addEventListener("click", (e) => {
         ui.delete(document.getElementById(e.target.id));
         store.deleteStore(e.target.id);
+        Swal.fire({
+            title: 'Delete !',
+            text: 'Book deleted from your List',
+            icon: 'info',
+            background: 'rgb(47, 47, 243)',
+            color: 'whitesmoke',
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+        })
       });
     });
   }, 500);
