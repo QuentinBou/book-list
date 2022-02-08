@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookList</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="title">
+        <i class="fas fa-book-open"></i>
+        <h3>My <span>Book</span> List</h3>
+    </div>
+    <form class="form">
+        <div class="form-group">
+            <label for="formTitle">Title</label>
+            <input type="text" id="formTitle">
+        </div>
+
+        <div class="form-group">
+            <label for="formAuthor">Author</label>
+            <input type="text" id="formAuthor">
+        </div>
+        
+        <div class="form-group">
+            <label for="formIsbn">ISBN#</label>
+            <input type="text" id="formIsbn">
+        </div>
+
+        <input type="submit" value="Add Book">
+    </form>
+
+    <div class="books-container">
+        <div class="books-container-header">
+            <h3>Title</h3>
+            <h3>Author</h3>
+            <h3>ISBN#</h3>
+        </div>
+
+        <div class="books-container-list">
+
+        </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+    <script src="utils.js" type="module"></script>
+</body>
+</html>
